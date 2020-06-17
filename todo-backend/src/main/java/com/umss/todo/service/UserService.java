@@ -16,7 +16,7 @@ public class UserService {
 	
 	
 	@Autowired
-	public UserService(@Qualifier("mysql") SqlConnector sqlConnector) {
+	public UserService(@Qualifier("temporary") SqlConnector sqlConnector) {
 		this.sqlConnector = sqlConnector;
 	}
 	
